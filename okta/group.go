@@ -23,7 +23,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/okta/okta-sdk-golang/v2/okta/query"
+	"github.com/recolabs/okta-sdk-golang/v2/okta/query"
 )
 
 type GroupResource resource

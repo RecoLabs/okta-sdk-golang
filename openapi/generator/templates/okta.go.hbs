@@ -12,7 +12,7 @@ import (
 	"runtime"
 
 	"github.com/kelseyhightower/envconfig"
-	"github.com/okta/okta-sdk-golang/v2/okta/cache"
+	"github.com/recolabs/okta-sdk-golang/v2/okta/cache"
 	"gopkg.in/yaml.v3"
 )
 
@@ -94,7 +94,7 @@ func (c *Client) SetConfig(conf ...ConfigSetter) (err error) {
 		return
 	}
 	c.config = config
-	return 
+	return
 }
 
 // GetRequestExecutor returns underlying request executor

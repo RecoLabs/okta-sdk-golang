@@ -64,7 +64,7 @@ To install the Okta Golang SDK in your project:
   - Run `go get github.com/okta/okta-sdk-golang/v2@latest`. This will add
     the SDK to your `go.mod` file.
   - Import the package in your project with `import
-   "github.com/okta/okta-sdk-golang/v2/okta"`
+   "github.com/recolabs/okta-sdk-golang/v2/okta"`
 
 ### Installing legacy version
 
@@ -92,7 +92,7 @@ Construct a client instance by passing it your Okta domain name and API token:
 import (
 	"fmt"
 	"context"
-	"github.com/okta/okta-sdk-golang/v2/okta"
+	"github.com/recolabs/okta-sdk-golang/v2/okta"
 )
 
 func main() {
@@ -174,7 +174,7 @@ any other configuration.
 import (
 	"fmt"
 	"context"
-	"github.com/okta/okta-sdk-golang/v2/okta"
+	"github.com/recolabs/okta-sdk-golang/v2/okta"
 )
 
 func main() {
@@ -206,7 +206,7 @@ should construct your own HTTP requests.
 import (
 	"fmt"
 	"context"
-	"github.com/okta/okta-sdk-golang/v2/okta"
+	"github.com/recolabs/okta-sdk-golang/v2/okta"
 )
 
 func main() {
@@ -236,7 +236,7 @@ func main() {
 import (
 	"fmt"
 	"context"
-	"github.com/okta/okta-sdk-golang/v2/okta"
+	"github.com/recolabs/okta-sdk-golang/v2/okta"
 )
 
 func main() {
@@ -269,8 +269,8 @@ func main() {
 import (
 	"fmt"
 	"context"
-	"github.com/okta/okta-sdk-golang/v2/okta"
-	"github.com/okta/okta-sdk-golang/v2/okta/query"
+	"github.com/recolabs/okta-sdk-golang/v2/okta"
+	"github.com/recolabs/okta-sdk-golang/v2/okta/query"
 )
 
 func main() {
@@ -307,8 +307,8 @@ func main() {
 import (
 	"fmt"
 	"context"
-	"github.com/okta/okta-sdk-golang/v2/okta"
-	"github.com/okta/okta-sdk-golang/v2/okta/query"
+	"github.com/recolabs/okta-sdk-golang/v2/okta"
+	"github.com/recolabs/okta-sdk-golang/v2/okta/query"
 )
 
 func main() {
@@ -363,8 +363,8 @@ func main() {
 import (
 	"fmt"
 	"context"
-	"github.com/okta/okta-sdk-golang/v2/okta"
-	"github.com/okta/okta-sdk-golang/v2/okta/query"
+	"github.com/recolabs/okta-sdk-golang/v2/okta"
+	"github.com/recolabs/okta-sdk-golang/v2/okta/query"
 )
 
 func main() {
@@ -415,7 +415,7 @@ You must first deactivate the user, and then you can delete the user.
 import (
 	"fmt"
 	"context"
-	"github.com/okta/okta-sdk-golang/v2/okta"
+	"github.com/recolabs/okta-sdk-golang/v2/okta"
 )
 
 func main() {
@@ -453,7 +453,7 @@ func main() {
 import (
 	"fmt"
 	"context"
-	"github.com/okta/okta-sdk-golang/v2/okta"
+	"github.com/recolabs/okta-sdk-golang/v2/okta"
 )
 
 func main() {
@@ -488,7 +488,7 @@ func main() {
 import (
 	"fmt"
 	"context"
-	"github.com/okta/okta-sdk-golang/v2/okta"
+	"github.com/recolabs/okta-sdk-golang/v2/okta"
 )
 
 func main() {
@@ -525,7 +525,7 @@ func main() {
 import (
 	"fmt"
 	"context"
-	"github.com/okta/okta-sdk-golang/v2/okta"
+	"github.com/recolabs/okta-sdk-golang/v2/okta"
 )
 
 func main() {
@@ -556,7 +556,7 @@ func main() {
 import (
 	"fmt"
 	"context"
-	"github.com/okta/okta-sdk-golang/v2/okta"
+	"github.com/recolabs/okta-sdk-golang/v2/okta"
 )
 
 func main() {
@@ -601,7 +601,7 @@ func main() {
 import (
 	"fmt"
 	"context"
-	"github.com/okta/okta-sdk-golang/v2/okta"
+	"github.com/recolabs/okta-sdk-golang/v2/okta"
 )
 
 func main() {
@@ -633,7 +633,7 @@ func main() {
 import (
 	"fmt"
 	"context"
-	"github.com/okta/okta-sdk-golang/v2/okta"
+	"github.com/recolabs/okta-sdk-golang/v2/okta"
 )
 
 func main() {
@@ -682,7 +682,7 @@ import (
 	"fmt"
 	"context"
   "time"
-	"github.com/okta/okta-sdk-golang/v2/okta"
+	"github.com/recolabs/okta-sdk-golang/v2/okta"
 )
 
 func main() {
@@ -920,12 +920,12 @@ This SDK supports this feature only for service-to-service applications. Check
 out [our
 guides](https://developer.okta.com/docs/guides/implement-oauth-for-okta/overview/)
 to learn more about how to register a new service application using a private
-and public key pair. 
+and public key pair.
 
-Key pairs can only be used to manage certain Okta endpoints, using the scopes listed 
-[here](https://developer.okta.com/docs/guides/implement-oauth-for-okta/main/#scopes-and-supported-endpoints). 
+Key pairs can only be used to manage certain Okta endpoints, using the scopes listed
+[here](https://developer.okta.com/docs/guides/implement-oauth-for-okta/main/#scopes-and-supported-endpoints).
 To manage Okta endpoints that are not listed
-[here](https://developer.okta.com/docs/guides/implement-oauth-for-okta/main/#scopes-and-supported-endpoints), 
+[here](https://developer.okta.com/docs/guides/implement-oauth-for-okta/main/#scopes-and-supported-endpoints),
 an API Token belonging to a user with appropriate permissions must be used instead.
 
 When using a keypair, you won't need an API Token because the SDK will

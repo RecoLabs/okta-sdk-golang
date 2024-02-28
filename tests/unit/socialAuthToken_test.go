@@ -23,7 +23,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/okta/okta-sdk-golang/v2/okta"
+	"github.com/recolabs/okta-sdk-golang/v2/okta"
 )
 
 func TestSocialAuthTokenMarshaling(t *testing.T) {

@@ -20,7 +20,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/okta/okta-sdk-golang/v2/okta"
+	"github.com/recolabs/okta-sdk-golang/v2/okta"
 	"github.com/stretchr/testify/require"
 )
 
