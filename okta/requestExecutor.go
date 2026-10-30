@@ -35,8 +35,8 @@ import (
 
 	"github.com/BurntSushi/toml"
 	"github.com/cenkalti/backoff/v4"
-	"github.com/go-jose/go-jose/v3"
-	"github.com/go-jose/go-jose/v3/jwt"
+	"github.com/go-jose/go-jose/v4"
+	"github.com/go-jose/go-jose/v4/jwt"
 	goCache "github.com/patrickmn/go-cache"
 	"github.com/recolabs/okta-sdk-golang/v2/okta/cache"
 )
@@ -267,7 +267,7 @@ func CreateClientAssertion(orgURL, clientID string, privateKeySinger jose.Signer
 		Audience: orgURL + "/oauth2/v1/token",
 	}
 	jwtBuilder := jwt.Signed(privateKeySinger).Claims(claims)
-	return jwtBuilder.CompactSerialize()
+	return jwtBuilder.Serialize()
 }
 
 func getAccessTokenForPrivateKey(httpClient *http.Client, orgURL, clientAssertion string, scopes []string, maxRetries int32, maxBackoff int64) (*RequestAccessToken, error) {
